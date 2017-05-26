@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { View, ViewStyle, StyleSheet, ViewProperties, LayoutChangeEvent, Platform } from 'react-native'
+import { View, ViewStyle, StyleSheet, ViewProperties } from 'react-native'
 const { Svg, Rect, Defs, LinearGradient, Stop, RadialGradient, Path } = require('react-native-svg')
 const alpha = require('color-alpha')
 
@@ -204,7 +204,4 @@ export class ShadowView extends React.Component<ViewProperties, any> {
     }
 }
 
-export default Platform.select({
-    ios: ShadowView,
-    android: ShadowView
-})
+export default ShadowView
