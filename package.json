@@ -1,0 +1,35 @@
+{
+  "name": "react-native-shadow-view",
+  "version": "0.0.1",
+  "description": "React Native's View Component with Shadows Both on Android and iOS, inspired by react-native-shadow",
+  "main": "index.js",
+  "typings": "index.d.ts",
+  "type": "index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pinqy520/react-native-shadow-view.git"
+  },
+  "keywords": [
+    "react-native"
+  ],
+  "author": "Qi Huang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pinqy520/react-native-shadow-view/issues"
+  },
+  "homepage": "https://github.com/pinqy520/react-native-shadow-view#readme",
+  "devDependencies": {
+    "@types/react": "^15.0.25",
+    "@types/react-native": "^0.44.4",
+    "react": "^15.5.4",
+    "react-native": "^0.44.0",
+    "react-native-svg": "^5.1.8",
+    "typescript": "^2.3.3"
+  },
+  "dependencies": {
+    "color-alpha": "^1.0.2"
+  }
+}

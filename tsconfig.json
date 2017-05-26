@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "noImplicitAny": true,
+        "target": "es6",
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "jsx": "react",
+        "moduleResolution": "node",
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "declaration": true
+    }
+}
