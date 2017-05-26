@@ -2,10 +2,10 @@
   "name": "react-native-shadow-view",
   "version": "0.0.1",
   "description": "React Native's View Component with Shadows Both on Android and iOS, inspired by react-native-shadow",
-  "main": "index.js",
-  "typings": "index.d.ts",
-  "types": "index.d.ts",
-  "type": "index.d.ts",
+  "main": "lib/",
+  "typings": "lib/index.ios.d.ts",
+  "types": "lib/index.ios.d.ts",
+  "type": "lib/index.ios.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

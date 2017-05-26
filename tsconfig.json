@@ -6,6 +6,7 @@
         "removeComments": true,
         "preserveConstEnums": true,
         "jsx": "react",
+        "outDir": "lib",
         "moduleResolution": "node",
         "experimentalDecorators": true,
         "emitDecoratorMetadata": true,
