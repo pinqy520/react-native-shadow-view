@@ -1,4 +1,7 @@
 # react-native-shadow-view
+
+![npm version](http://img.shields.io/npm/v/react-native-shadow-view.svg)
+
 React Native's View Component with Shadows Both on Android and iOS, inspired by react-native-shadow
 
 ## Install
@@ -36,6 +39,6 @@ const Example = (props) => (
 )
 ```
 
-## Known Issue
+## Known Issues
 
 - The `width` and `height` of the `View` style must be specified.
