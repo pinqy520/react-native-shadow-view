@@ -4,6 +4,7 @@
   "description": "React Native's View Component with Shadows Both on Android and iOS, inspired by react-native-shadow",
   "main": "index.js",
   "typings": "index.d.ts",
+  "types": "index.d.ts",
   "type": "index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
