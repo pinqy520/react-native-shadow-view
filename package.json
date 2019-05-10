@@ -7,7 +7,7 @@
   "types": "lib/index.ios.d.ts",
   "type": "lib/index.ios.d.ts",
   "scripts": {
-    "prepublish": "tsc",
+    "prepublish": "tsc"
   },
   "repository": {
     "type": "git",
