@@ -43,7 +43,7 @@ class BoxShadow extends React.Component<BoxShadowProperties, any> {
             color = "#000",
             border = 0,
             radius = 0,
-            opacity = settings.color && parse(settings.color).alpha || 1,
+            opacity = 1,
             x = 0,
             y = 0,
         } = settings;
@@ -148,6 +148,7 @@ export class ShadowView extends React.Component<ViewProperties, any> {
             shadowRadius,
             ...other
         } = styleObject
+        const adjustedShadowOpacity = shadowOpacity * parse(shadowColor).alpha;
         const {
             width, height,
             margin,
@@ -188,7 +189,7 @@ export class ShadowView extends React.Component<ViewProperties, any> {
         const shadowSettings = {
             width,
             height,
-            opacity: shadowOpacity * 0.5,
+            opacity: adjustedShadowOpacity * 0.5,
             border: shadowRadius * 1.15,
             radius: borderRadius,
             color: shadowColor,
