@@ -1,7 +1,8 @@
 import * as React from 'react'
 import { View, ViewStyle, StyleSheet, ViewProperties } from 'react-native'
 const { Svg, Rect, Defs, LinearGradient, Stop, RadialGradient, Path } = require('react-native-svg')
-const alpha = require('color-alpha')
+const alpha = require('color-alpha');
+const parse = require('color-parse');
 
 interface BoxShadowProperties extends ViewProperties {
     settings: {
@@ -42,10 +43,10 @@ class BoxShadow extends React.Component<BoxShadowProperties, any> {
             color = "#000",
             border = 0,
             radius = 0,
-            opacity = 1,
+            opacity = settings.color && parse(settings.color).alpha || 1,
             x = 0,
             y = 0,
-        } = settings
+        } = settings;
 
         const lineWidth = border,
             rectWidth = width - radius * 2,
