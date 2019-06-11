@@ -3,11 +3,11 @@
   "version": "0.0.1",
   "description": "React Native's View Component with Shadows Both on Android and iOS, inspired by react-native-shadow",
   "main": "lib/",
-  "typings": "lib/index.ios.d.ts",
-  "types": "lib/index.ios.d.ts",
-  "type": "lib/index.ios.d.ts",
+  "typings": "lib/index.d.ts",
+  "types": "lib/index.d.ts",
+  "type": "lib/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepublish": "tsc"
   },
   "repository": {
     "type": "git",
@@ -28,7 +28,8 @@
     "typescript": "^2.3.3"
   },
   "dependencies": {
-    "color-alpha": "^1.0.2"
+    "color-alpha": "^1.0.2",
+    "color-parse": "^1.3.7"
   },
   "peerDependencies": {
     "react": "*",

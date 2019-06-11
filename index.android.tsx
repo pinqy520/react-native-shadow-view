@@ -1,7 +1,8 @@
 import * as React from 'react'
 import { View, ViewStyle, StyleSheet, ViewProperties } from 'react-native'
 const { Svg, Rect, Defs, LinearGradient, Stop, RadialGradient, Path } = require('react-native-svg')
-const alpha = require('color-alpha')
+const alpha = require('color-alpha');
+const parse = require('color-parse');
 
 interface BoxShadowProperties extends ViewProperties {
     settings: {
@@ -45,7 +46,7 @@ class BoxShadow extends React.Component<BoxShadowProperties, any> {
             opacity = 1,
             x = 0,
             y = 0,
-        } = settings
+        } = settings;
 
         const lineWidth = border,
             rectWidth = width - radius * 2,
@@ -147,6 +148,7 @@ export class ShadowView extends React.Component<ViewProperties, any> {
             shadowRadius,
             ...other
         } = styleObject
+        const adjustedShadowOpacity = shadowOpacity * parse(shadowColor).alpha;
         const {
             width, height,
             margin,
@@ -187,7 +189,7 @@ export class ShadowView extends React.Component<ViewProperties, any> {
         const shadowSettings = {
             width,
             height,
-            opacity: shadowOpacity * 0.5,
+            opacity: adjustedShadowOpacity * 0.5,
             border: shadowRadius * 1.15,
             radius: borderRadius,
             color: shadowColor,
